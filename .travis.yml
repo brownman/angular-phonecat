@@ -13,7 +13,7 @@ matrix:
 # whitelist
 branches:
   only:
-    - master
+    - with-screenshots
     
 #before_install:
 #  - chmod u+x ./travis.sh
