@@ -19,7 +19,8 @@ branches:
 #  - chmod u+x ./travis.sh
 
 install:
-    - npm install
+    - npm -g install
+    - npm link
     - bower install --save
     - cp -rf bower*/.git /tmp
     - cp -rf bower* app/
