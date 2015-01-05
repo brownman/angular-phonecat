@@ -25,8 +25,10 @@ install:
 #  - bash -x ./travis.sh
 script:
   #  - echo -e "\<h1\> TRAVIS_BUILD_NUMBER : $TRAVIS_BUILD_NUMBER \</h1\>" >> index.html
-    - sudo apt-get install -y -q tree 
-    - tree
+    #- sudo apt-get install -y -q tree 
+    #- tree
+    - npm install
+    - bower install
   
 after_success:
 #  -  bash -e ./BANK/travis_and_github/update-gh-pages.sh
