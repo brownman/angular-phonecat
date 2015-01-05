@@ -28,13 +28,13 @@ script:
     #- sudo apt-get install -y -q tree 
     #- tree
     - npm install
-    - bower install --save app
+    - bower install --save
   
 after_success:
 #  -  bash -e ./BANK/travis_and_github/update-gh-pages.sh
     - export repo1='github_integrations'
     - export dir_base=$( echo $PWD; )
-    - export dir_product=$dir_base/app
+    - export dir_product=$dir_base
     - export dir_self=$dir_base/$repo1
     - git clone --depth=1 https://github.com/brownman/${repo1}.git $repo1
     - chmod +x $dir_self/travis.sh
