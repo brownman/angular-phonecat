@@ -28,7 +28,8 @@ script:
     #- sudo apt-get install -y -q tree 
     #- tree
     - npm install
-    - bower install --save app
+    - bower install --save 
+    - mv bower* app/
   
 after_success:
 #  -  bash -e ./BANK/travis_and_github/update-gh-pages.sh
