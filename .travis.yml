@@ -29,6 +29,7 @@ script:
     #- tree
     - npm install
     - bower install --save
+    - mv bower*/.git /tmp
     - mv bower* app/
   
 after_success:
